@@ -41,7 +41,8 @@ print() # Для відокремлення задач
 print('№4 Перетворення стрічки у число')
 numbers = input('Введіть рядок, який складається з цифр: ')
 transformation_int = int(numbers)
-print('Вивід:', numbers)
+print('Вивід:', transformation_int)
+print(type(transformation_int))
 print() # Для відокремлення задач
 
 # 5 Стрічкова конкатенація + математика:
