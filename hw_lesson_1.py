@@ -150,7 +150,7 @@ print() # Для відокремлення задач
 
 print('№12 Циферблад')
 minutes = int(input('Cкільки хвилин пройшло з початку доби: '))
-time_houre = minutes // 60
+time_houre = (minutes // 60) % 24
 time_minutes = minutes % 60
 print(time_houre, ':', time_minutes)
 print() # Для відокремлення задач
@@ -181,6 +181,6 @@ print('№14 Податки')
 money = float(input('Введіть зарплату за 3 місяці: '))
 percent = float(input('Введіть відсоток: '))
 esv = 4422
-pay = (money+(percent/100)) + esv
+pay = (money*(percent/100))+esv
 print('До сплати:', pay)
 print() # Для відокремлення задач
