@@ -45,9 +45,9 @@ print() # Для відокремлення задач
 print('№5 Стрічкова конкатенація + математика')
 number_one = input('Введіть перше число: ')
 number_two = input('Введиіть друге число: ')
-number_one_int = float(number_one)
-number_two_int = float(number_two)
-result_sum = number_one_int + number_two_int
+number_one_float = float(number_one)
+number_two_float = float(number_two)
+result_sum = number_one_float + number_two_float
 print('Сума чисел =', result_sum)
 result_adding = number_one + number_two
 print('Об`єднання чисел =',result_adding)
