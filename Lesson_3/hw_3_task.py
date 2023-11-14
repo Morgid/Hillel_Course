@@ -18,16 +18,16 @@ print('Покупки')
 shopping_list = input('Додайте список покупок через пробіл: ').split()
 
 if len(shopping_list) < 5:
-    print('Товарів менше п`яти.',end='\nЗамало товарів, введіть, будь ласка, більше товарів у список наступного разу.')
+    print('Товарів менше п`яти.', end='\nЗамало товарів, введіть, будь ласка, більше товарів у список наступного разу.')
 
 else:
-    print('Список продуктів:',shopping_list)
+    print('Список продуктів:', shopping_list)
     print('Кількість товарів у кошику:', len(shopping_list))
     delete_item = int(input(f'Введіть номер товару який хочете видалити зі списку (від 1 до {len(shopping_list)}): '))
     delete = shopping_list.pop(delete_item - 1)
     print()
 
-    print('Список продуктів:',shopping_list)
+    print('Список продуктів:', shopping_list)
     print('Кількість товарів у кошику:', len(shopping_list))
     delete_item = int(input(f'Введіть номер товару який хочете видалити зі списку (від 1 до {len(shopping_list)}): '))
     delete = shopping_list.pop(delete_item - 1)
@@ -65,7 +65,6 @@ else:
 
         else:
             print('Приймається відповідь y або n')
-            
     else:
         print(f'В кошику ще залишилось товарів = {len(shopping_list)}')
         yes_no = (input('Бажаєте додати ще товарів? (y/n): '))
@@ -74,6 +73,7 @@ else:
             update_shopping_list = shopping_list
             update_shopping_list.append(input('Додайте список покупок через пробіл: ').split())
             print('Список продуктів:', shopping_list)
+            print()
             print('Дякуємо за користування програмою :)')
 
         elif yes_no.lower() == 'n':
