@@ -65,6 +65,7 @@ else:
 
         else:
             print('Приймається відповідь y або n')
+            
     else:
         print(f'В кошику ще залишилось товарів = {len(shopping_list)}')
         yes_no = (input('Бажаєте додати ще товарів? (y/n): '))
@@ -73,7 +74,6 @@ else:
             update_shopping_list = shopping_list
             update_shopping_list.append(input('Додайте список покупок через пробіл: ').split())
             print('Список продуктів:', shopping_list)
-            print()
             print('Дякуємо за користування програмою :)')
 
         elif yes_no.lower() == 'n':
