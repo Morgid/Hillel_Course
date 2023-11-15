@@ -70,8 +70,7 @@ else:
         yes_no = (input('Бажаєте додати ще товарів? (y/n): '))
 
         if yes_no.lower() == 'y':
-            update_shopping_list = shopping_list
-            update_shopping_list.append(input('Додайте список покупок через пробіл: ').split())
+            shopping_list.append(input('Додайте список покупок через пробіл: ').split())
             print('Список продуктів:', shopping_list)
             print('Дякуємо за користування програмою :)')
 
