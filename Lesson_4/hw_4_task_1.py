@@ -10,8 +10,6 @@
 #
 #    213 123 213 2.2 2.2 2.3
 
-import math
-import decimal
 print('Задача 1')
 customer_bill = input("Введіть вартість покупок: ").split()
 customer_bill = [float(i) for i in customer_bill]
