@@ -12,9 +12,9 @@
 # print(zmina_1)
 
 # ПРАВИЛЬНИЙ ВАРІАНТ
-variable_1 = 20
-variable_2 = 5
-variable_3 = 3
+# variable_1 = 20
+# variable_2 = 5
+# variable_3 = 3
 
 # hotkey дублювання command+d або cntrl+d
 #
@@ -58,6 +58,6 @@ variable_3 = 3
 # print(result)
 
 
-age = int(input("скільки вам років"))  # default повертає str тип данних
-print(age)
-print(type(age))
+# age = int(input("скільки вам років"))  # default повертає str тип данних
+# print(age)
+# print(type(age))

@@ -159,12 +159,12 @@
 # string_var = string_var.title()  # стр зміний тип даних для збреження треба зберігати.
 # print(string_var)
 
-url = "https://product_ur_prod.com"
-print(url)
-url = url.replace("_prod", "_qa")  # заміна
-print(url)
-url = url.replace("_qa", "")  # видалення
-print(url)
+# url = "https://product_ur_prod.com"
+# print(url)
+# url = url.replace("_prod", "_qa")  # заміна
+# print(url)
+# url = url.replace("_qa", "")  # видалення
+# print(url)
 
 # password = input("please, type your name: ")
 # if password.title() == "Igor":

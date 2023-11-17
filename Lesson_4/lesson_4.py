@@ -49,8 +49,8 @@
 
 
 # import math
-# print(math.ceil(0.0001))
-# print(math.floor(1.999))
+# print(math.ceil(0.44))
+# print(math.floor(1.44))
 # print(math.ceil(0.0001) == math.floor(1.999))
 # print(abs(-10))  # по модулю
 
@@ -130,16 +130,16 @@ import time
 
 # new_string = "+".join("Привіт як в тебе справи")
 # print(new_string)
-# print(list_b)
+# # print(list_b)
 # list_a = ["банани", "яблука", "шампунь"]
 # string_from_list = " ".join(list_a)
 # print(string_from_list)
 
 
 # Ще по формату https://github.com/Pasha-lt/study/blob/main/format_and_join.py
-name = "Сергій"
-mid_name = "Андрійович"
-balance = 15000000
+# name = "Сергій"
+# mid_name = "Андрійович"
+# balance = 15000000
 
 # text = """Шановний {0} {1}, баланс вашого рахунку складає {2} грн.""".format(name, mid_name, balance)
 # print(text)
