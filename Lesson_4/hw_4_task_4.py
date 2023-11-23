@@ -20,7 +20,7 @@ age = 21
 
 f_string = f'Я {name.title()}, мені {age} рік'  #
 
-format_string = """Я {name}, мені {age} рік""".format(name=name.title(), age=age)
+format_string = '''Я {name}, мені {age} рік'''.format(name=name.title(), age=age)
 
 print(f_string)
 
