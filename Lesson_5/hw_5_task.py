@@ -33,7 +33,7 @@ table_dict = {"+": [addition_list], "-": [division_list], "/": [substract_list],
 
 need_table = input("Яку табличку ви хочете побачити? (+, -, /, *): ")
 
-if (need_table) == "+" or need_table.title() == "Додавання":
+if need_table == "+" or need_table.title() == "Додавання":
     print("Таблиця додавання: ")
     print(table_dict.get("+"))
 elif need_table == "-" or need_table.title() == "Віднімання":
