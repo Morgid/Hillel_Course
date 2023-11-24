@@ -13,8 +13,8 @@ print('№7 Перевод з цельсія в фаренгейт')
 
 temperature_c = float(input('Введіть кількість градусів в Цельсіях: '))
 
-def temperature_convert(conversion_farenheit):
+def celsium_to_farenheit_convert(conversion_farenheit: int | float):
     conversion_farenheit = (temperature_c * 9 / 5) + 32
     return conversion_farenheit
 
-print(f'Кількість градусів в Фаренгейтах = {temperature_convert(conversion_farenheit=temperature_c)}')
+print(f'Кількість градусів в Фаренгейтах = {celsium_to_farenheit_convert(conversion_farenheit=temperature_c)}')
