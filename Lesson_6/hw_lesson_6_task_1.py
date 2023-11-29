@@ -9,14 +9,12 @@
 # 7 Перевод з цельсія в фаренгейт:
 # Напишіть програму, яка запитує в користувача кількість градусів в цельсіях і повертає в фаренгейтах.
 
-# 7 Перевод з цельсія в фаренгейт:
-# Напишіть програму, яка запитує в користувача кількість градусів в цельсіях і повертає в фаренгейтах.
 
 print('№7 Перевод з цельсія в фаренгейт')
 
 temperature_c = float(input('Введіть кількість градусів в Цельсіях: '))
 
-def temperature_convert(conversion_farenheit):
+def temperature_convert(conversion_farenheit: float):
     conversion_farenheit = (temperature_c * 9 / 5) + 32
     return conversion_farenheit
 
