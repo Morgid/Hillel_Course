@@ -83,6 +83,3 @@ def display_table(need_table):
 
 
 need_table()
-
-
-# print(type(addition(addition_list)))
