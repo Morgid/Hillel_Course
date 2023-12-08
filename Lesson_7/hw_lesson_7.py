@@ -11,16 +11,16 @@
 # Встановіть собі пайтест і прораньте. До домашки отрім кода додайте скріншот прогона тестів.
 
 def sorting_by_increase(list_of_numbers: list = [12, 22, 1, 3, 2, 4, -5, -66, -777, 0, 66, 400, 55.4, 66.6]) -> list:
-    increase_result = (sorted(list_of_numbers))
+    increase_result = sorted(list_of_numbers)
     return increase_result
 
 
 def sorting_by_decrease(list_of_numbers: list = [12, 22, 1, 3, 2, 4, -5, -66, -777, 0, 66, 400, 55.4, 66.6]) -> list:
-    decrease_result = (sorted(list_of_numbers, reverse=True))
+    decrease_result = sorted(list_of_numbers, reverse=True)
     return decrease_result
 
 
 def sorting_by_letters(list_fo_words: list = ["ця", "фраза", "сортування", "Є", "перевірки", "одна", "лиш", "роботи",
                                               "функцією!!!"]) -> list:
-    letters_lens_result = (sorted(list_fo_words, key=len))
+    letters_lens_result = sorted(list_fo_words, key=len)
     return letters_lens_result
