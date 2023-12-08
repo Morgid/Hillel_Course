@@ -57,9 +57,9 @@ calc_dict = {
     "/": lambda a, b: a / b,
     "-": lambda a, b: a - b
 }
-#
-# print(calc_dict["+"](199, 1))
-# print(calc_dict["*"](4, 3))
+
+print(calc_dict["+"](199, 1))
+print(calc_dict["*"](4, 3))
 def concatenate(string_a : str, string_b : str) -> str:
     result = string_a + string_b
     return result
@@ -126,15 +126,15 @@ def concatenate(string_a : str, string_b : str) -> str:
 
 
 
-# ascii (укрстрінг), ord VS chr
-print(ascii("c"))  # eng c
-print(ascii("с"))  # укр c
-
-print(ord("F"))  # 70
-print(ord("f"))  # 102
-
-print(chr(102))  # f
-print(chr(72))  # H
+# # ascii (укрстрінг), ord VS chr
+# print(ascii("c"))  # eng c
+# print(ascii("с"))  # укр c
+#
+# print(ord("F"))  # 70
+# print(ord("f"))  # 102
+#
+# print(chr(102))  # f
+# print(chr(72))  # H
 
 
 
