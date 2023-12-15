@@ -1,4 +1,5 @@
-# 1) додайте requirements.txt на ваш гіт
+# 1) додайте requirements.txt на ваш гіт:
+#  https://github.com/Morgid/Hillel_Course_AQA_Podlinnov/blob/master/Lesson_9/requirements.txt
 
 
 # 3) зробіть функцію як ми робили з додаванням
