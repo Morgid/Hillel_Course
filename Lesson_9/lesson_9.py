@@ -1,13 +1,13 @@
-# docstring
-def foo(number_2:int, number_1: int) -> int:
-    """
-    add two numbers
-    :param number_1 int: first number
-    :param number_2 int: second number
-    :return int: result add two number
-    """
-    result = number_1 + number_2
-    return result
+# # docstring
+# def foo(number_2:int, number_1: int) -> int:
+#     """
+#     add two numbers
+#     :param number_1 int: first number
+#     :param number_2 int: second number
+#     :return int: result add two number
+#     """
+#     result = number_1 + number_2
+#     return result
 
 # use default only when your func need it. Не ставимо дефолт і не використовуємно інпут в оголошені функції.
 # ENV and requirements.txt коли беремо новий проект дивимось його релізи на pypi.org
@@ -49,9 +49,9 @@ def foo(number_2:int, number_1: int) -> int:
 
 
 # Pytest parametrize -> подивіться файл test_parametrize.py
-def add_two_numbers(number_1:int|float, number_2: int|float) -> int|float:
-    result = number_1 + number_2
-    return result
+# def add_two_numbers(number_1:int|float, number_2: int|float) -> int|float:
+#     result = number_1 + number_2
+#     return result
 
 
 # tuple return
@@ -64,32 +64,32 @@ def add_two_numbers(number_1:int|float, number_2: int|float) -> int|float:
 
 # decorator python
 
-def func_wrapper(func):
-    def wrapper(*arg, **kwarg):
-        print("before")
-        result = func(*arg, **kwarg)
-        print("after")
-        return result
-    return wrapper
+# def func_wrapper(func):
+#     def wrapper(*arg, **kwarg):
+#         print("before")
+#         result = func(*arg, **kwarg)
+#         print("after")
+#         return result
+#     return wrapper
 
-def bar(*arg, **kwarg):
-    print("hello", arg, kwarg)
+# def bar(*arg, **kwarg):
+#     print("hello", arg, kwarg)
 
 
-# # для розуміння
+# для розуміння
 # wrapped_func = func_wrapper(bar)
 # wrapped_func()
 
 
 # Випадок номер два
-@func_wrapper
-def bar_1(*arg, **kwarg):
-    print("hello bar 1", arg, kwarg)
-
-@func_wrapper
-def bar_2(*arg, **kwarg):
-    print("hello bar 2", arg, kwarg)
-
+# @func_wrapper
+# def bar_1(*arg, **kwarg):
+#     print("hello bar 1", arg, kwarg)
+#
+# @func_wrapper
+# def bar_2(*arg, **kwarg):
+#     print("hello bar 2", arg, kwarg)
+#
 # bar_1(333)
 # bar_2(333)
 
@@ -117,8 +117,8 @@ def foo_2(*arg, **kwarg):
     print("foo_2")
     time.sleep(2)
 
-# foo_1()
-# foo_2()
+foo_1()
+foo_2()
 
 
 

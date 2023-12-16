@@ -66,18 +66,18 @@
 
 
 # import
-import lesson_10_import
-
-import random  # вся бібліотека - найпріоритетніший
-# random.randint
-
-from random import randint  # імпорт конкретную функції
-# randint
-
-from random import randint as rrandint
-# rrandint
-
-from random import *  # імпортує всі функції == так не робіть
+# import lesson_10_import
+#
+# import random  # вся бібліотека - найпріоритетніший
+# # random.randint
+#
+# from random import randint  # імпорт конкретную функції
+# # randint
+#
+# from random import randint as rrandint
+# # rrandint
+#
+# from random import *  # імпортує всі функції == так не робіть
 
 # ВЗАЄМОДІЯ З ФАЙЛАМИ
 # file = open("text.txt", "r")  # читання файла

@@ -1,3 +1,6 @@
+import time
+
+
 # 1) додайте requirements.txt на ваш гіт:
 #  https://github.com/Morgid/Hillel_Course_AQA_Podlinnov/blob/master/Lesson_9/requirements.txt
 
@@ -31,9 +34,6 @@ def func_wrapper_time(func):
         return result
 
     return wrapper
-
-
-import time
 
 
 @func_wrapper_time
