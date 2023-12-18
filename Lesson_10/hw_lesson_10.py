@@ -17,11 +17,10 @@ def add_three_numbers(number_1: int | float, number_2: int | float, number_3: in
 def write_log(func):
     def wrapper(*args):
         with open('log.txt', 'a') as file:
-            file.write('\n')
-            file.write('---------START---------\n')
-            file.write(f'Adding numbers {args[0]}, {args[1]}, {args[2]}\n')
-            file.write(f'Result = {add_three_numbers(*args)}\n')
-            file.write('----------END----------\n')
+            file.write('\n''---------START---------\n'
+                       f'Adding numbers {args[0]}, {args[1]}, {args[2]}\n'
+                       f'Result = {add_three_numbers(*args)}\n'
+                       '----------END----------\n')
         result = func(*args)
         return result
 
