@@ -24,4 +24,3 @@ def test_sleep_4():
 def test_sleep_5():
     print("I'm going to sleep for 2 seconds")
     time.sleep(2)
-
