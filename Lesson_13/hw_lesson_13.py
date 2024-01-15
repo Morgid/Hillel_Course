@@ -1,4 +1,4 @@
-class AmountHundred:
+class AmountGreaterHundred:
     def __init__(self, amount):
         self.amount = amount
 
@@ -11,7 +11,7 @@ class AmountHundred:
             return False
 
 
-object_1 = AmountHundred(59)
-object_2 = AmountHundred(42)
+object_1 = AmountGreaterHundred(59)
+object_2 = AmountGreaterHundred(42)
 
 print(object_1 > object_2)
