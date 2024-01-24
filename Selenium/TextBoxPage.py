@@ -22,22 +22,22 @@ class TextBoxPage:
     def fill_full_name_field(self, text: str) -> None:
         self.driver.find_element(*self.full_name_field).send_keys(text)
 
-    def clear_full_email_field(self) -> None:
+    def clear_email_field(self) -> None:
         self.driver.find_element(*self.full_email_field).clear()
 
-    def fill_full_email_field(self, text: str) -> None:
+    def fill_email_field(self, text: str) -> None:
         self.driver.find_element(*self.full_email_field).send_keys(text)
 
-    def clear_full_current_text_area_field(self) -> None:
+    def clear_current_text_area_field(self) -> None:
         self.driver.find_element(*self.full_current_text_area_field).clear()
 
-    def fill_full_current_text_area_field(self, text: str) -> None:
+    def fill_current_text_area_field(self, text: str) -> None:
         self.driver.find_element(*self.full_current_text_area_field).send_keys(text)
 
-    def clear_full_permanent_text_area_field(self) -> None:
+    def clear_permanent_text_area_field(self) -> None:
         self.driver.find_element(*self.full_permanent_text_area_field).clear()
 
-    def fill_full_permanent_text_area_field(self, text: str) -> None:
+    def fill_permanent_text_area_field(self, text: str) -> None:
         self.driver.find_element(*self.full_permanent_text_area_field).send_keys(text)
 
     def click_submit(self) -> None:
