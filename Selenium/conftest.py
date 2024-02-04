@@ -1,8 +1,13 @@
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
 
 @pytest.fixture
 def chrome():
-    driver = webdriver.Chrome(executable_path="C:\Works\Other\AQA\Hillel_october_23-main\Selenium\chromedriver.exe")
+    service = Service(
+        executable_path='C:\\Users\\Podli\\OneDrive\\Рабочий стол\\Hillel\\Hillel_Course_AQA_Podlinnov\\Selenium\\chromedriver.exe')
+    options = webdriver.ChromeOptions()
+    driver = webdriver.Chrome(service=service, options=options)
     yield driver
     driver.quit()
