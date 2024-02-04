@@ -2,6 +2,7 @@ import pytest
 
 from Hillel_october_23.lesson_19.TextBoxPage import TextBoxPage
 
+
 class TestTextBox:
 
     # def test_username_fill_and_check(self, chrome):
@@ -23,8 +24,6 @@ class TestTextBox:
         class_of_field = page.get_email_field_element().get_attribute("class")
         assert "error" in class_of_field
 
-
-
     # def test_email_fill_and_check(self, chrome):
     #     #todo HW
     #     pass
@@ -36,5 +35,3 @@ class TestTextBox:
     # def test_perm_addr_fill_and_check(self, chrome):
     #     # todo HW
     #     pass
-
-
