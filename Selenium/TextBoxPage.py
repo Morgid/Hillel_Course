@@ -64,3 +64,6 @@ class TextBoxPage:
 
     def scroll_down(self) -> None:
         self.driver.execute_script("window.scrollBy(0, 500);")
+
+    def get_email_field_element(self):
+        pass
