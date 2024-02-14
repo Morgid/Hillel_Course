@@ -14,6 +14,7 @@ class TestWaiters:
         visible_invisible_button_loc = (By.CSS_SELECTOR, "#visibleAfter")  # = (By.ID, "visibleAfter")
         WebDriverWait(self.driver, timeout=5).until(ec.visibility_of_element_located(visible_invisible_button_loc))
         visible_invisible_button = self.driver.find_element(*visible_invisible_button_loc)
+        visible_invisible_button.click()
         assert visible_invisible_button.is_displayed()
 
     def test_connection_enable(self):
