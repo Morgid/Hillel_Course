@@ -7,6 +7,7 @@ from Hillel_Course_AQA_Podlinnov.Selenium.ElementsPage import ElementsPage
 
 
 class TestElementsPage:
+
     def test_page(self, chrome):
         page = ElementsPage(chrome)
         page.open()

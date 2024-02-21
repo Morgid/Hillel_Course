@@ -69,10 +69,10 @@ def concatenate(string_a : str, string_b : str) -> str:
 # sorted
 # list_1 = [34, 456, 11, 12, -100, 77, 100, 35, 100.0, 100]
 # list_2 = ['груша', 'грушаa', 'банан',  'яблуко', 'диня', "слива", "апельсин"]
-# print(sorted(list_1, reverse=True))
+# # print(sorted(list_1, reverse=True))
 # print(sorted(list_1, key=lambda x: x%2))
-# print(sorted(list_2, key=len))
-# print(sorted(list_2, key=lambda a: a[-1]))
+# # print(sorted(list_2, key=len))
+# print((list_2, key=lambda a: a[-1]))
 #
 
 
@@ -93,13 +93,13 @@ def concatenate(string_a : str, string_b : str) -> str:
 
 
 
-# def foo2(*args, **kwargs):
-#     grades_list = args
-#     dict_1 = kwargs
-#     print(dict_1)
-#     print(grades_list)
-#
-# foo2(33, 200, 90, a=22, b=77, c=45)
+def foo2(*args, **kwargs):
+    grades_list = args
+    dict_1 = kwargs
+    print(dict_1)
+    print(grades_list)
+
+foo2(33, 200, 90, a=22, b=77, c=45)
 # dict_a = {33:32}
 # dict_b = {30:100}
 #

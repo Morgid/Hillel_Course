@@ -72,8 +72,8 @@ class Bank:
 #     list_a.append(i ** 2)
 # print(list_a)
 #
-# list_b = [i ** 2 for i in range(9)]
-# print(list_b)
+list_b = [i for i in range(9)]
+print(list_b)
 #
 # list_c = [i for i in range(9) if i % 2 == 0]
 # print(list_c)

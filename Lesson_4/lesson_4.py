@@ -89,15 +89,15 @@
 #         print(f"ваш елемент = {element}")
 # print(new_number_list)
 
-# list_a = [12, 323, True, 545, "hfd", 6546, 654, "hfd", 400.01]
-# new_number_list = []
-# print(list_a)
-# for element in list_a:
-#     if isinstance(element, (int, float)):
-#         new_number_list.append(element/100)
-#     elif isinstance(element, str):
-#         print(f"ваш елемент = {element}")
-# # print(new_number_list)
+list_a = [12, 323, True, 545, "hfd", 6546, 654, "hfd", 400.01]
+new_number_list = []
+print(list_a)
+for element in list_a:
+    if isinstance(element, (int, float)):
+        new_number_list.append(element/100)
+    elif isinstance(element, str):
+        print(f"ваш елемент = {element}")
+# print(new_number_list)
 #
 
 # # todo Чим відрізнятється tuple від list

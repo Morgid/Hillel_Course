@@ -5,7 +5,7 @@ class TestClass:
 
     @classmethod
     def setup_class(cls):
-        cls.response = requests.request("GET", "https://api.chucknorris.io/jokes/random")
+        cls.response = requests.request("GET", "z")
         print(1)
 
     @classmethod
