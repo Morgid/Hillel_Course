@@ -20,9 +20,6 @@ class ElementsPage:
         self.driver.get(self.url)
         return self
 
-    def scroll_down(self) -> None:
-        self.driver.execute_script("window.scrollBy(0, 900);")
-
     def button_profit_xpath_full(self):
         return self.driver.find_element(*self.button_profit_xpath_full_loc)
 

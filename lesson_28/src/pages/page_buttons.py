@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from Hillel_october_23.lesson_24.widgets.components import Button
+from Hillel_Course_AQA_Podlinnov.lesson_28.widgets.components import Button
 
 class PageButtons:
     _instance = None
@@ -30,6 +30,12 @@ class PageButtons:
 
     def button_doubleclick(self):
         return Button(self.driver, self.button_doubleclick_loc)
+
+    def button_right_click(self):
+        return Button(self.driver, self.button_right_click_loc)
+
+    def button_dynamic(self):
+        return Button(self.driver, self.button_dynamic_id_loc)
 
     def get_button_doubleclick_message(self) -> str:
         return self.driver.find_element(*self.button_doubleclick_message_loc).text

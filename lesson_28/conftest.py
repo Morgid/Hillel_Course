@@ -27,7 +27,7 @@ def firefox(request):
 
 @pytest.fixture(scope="class")
 def chrome_class(request):
-    driver = webdriver.Chrome(executable_path="/Users/pavlokostyshen/Desktop/hillel/Hillel_october_23/lesson_22/chromedriver")
+    driver = webdriver.Chrome(executable_path="C:\\Users\\Podli\\OneDrive\\Рабочий стол\\Hillel\\Hillel_Course_AQA_Podlinnov\\lesson_28\\chromedriver.exe")
     request.cls.driver = driver
     yield driver
     driver.quit()

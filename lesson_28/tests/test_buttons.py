@@ -1,7 +1,7 @@
 import pytest
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from Hillel_october_23.lesson_24.src.pages.page_buttons import PageButtons
+from Hillel_Course_AQA_Podlinnov.lesson_28.src.pages.page_buttons import PageButtons
 
 
 
@@ -14,11 +14,16 @@ class TestButtons:
 
     def test_doubleclick_button(self):
         self.page.open()
+        self.page.button_doubleclick().scroll_into_view()
         self.page.button_doubleclick().doubleclick()
         assert self.page.get_button_doubleclick_message() == 'You have done a double click'
 
     def test_right_click_button(self):
-        pass
+        self.page.open()
+        self.page.button_right_click().right_click()
+        assert self.page.get_button_right_click_message() == 'You have done a right click'
 
-    def test_dynamic_id_click_button(self):  #кнопка Click Me
-        pass
+    def test_dynamic_id_click_button(self):
+        self.page.open()
+        self.page.button_dynamic().click()
+        assert self.page.get_button_dynamic_id_click_message() == 'You have done a dynamic click'

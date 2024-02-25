@@ -18,4 +18,5 @@ class TestClass:
 
     @pytest.mark.parametrize("key", ['created_at', 'icon_url', 'id', 'updated_at', 'url', 'value'])
     def test_keys(self, key):
+        print(self.response.json())
         assert self.response.json()[key]
