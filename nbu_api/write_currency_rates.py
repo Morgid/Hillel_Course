@@ -17,8 +17,8 @@ def write_currency_rates():
         file.write(f'Дата створення запиту {datetime.date.today()} \n')
         currency_rate = ''
         for element in currency_rates:
-            currency_rate = f"{element['txt']} to UAH: {element['rate']} \n"
-            file.write(currency_rate)
+            currency_rate += f"{element['txt']} to UAH: {element['rate']} \n"
+        file.write(currency_rate)
         return currency_rate
 
 
