@@ -15,10 +15,10 @@ def write_currency_rates():
     currency_rates, status_code = currency_response()
     with open("currency_rates_data.txt", "w", encoding='utf-8') as file:
         file.write(f'Дата створення запиту {datetime.date.today()} \n')
-        currency_rate = ''
+        currency_rate = ""
         for element in currency_rates:
-            currency_rate = f"{element['txt']} to UAH: {element['rate']} \n"
-            file.write(currency_rate)
+            currency_rate += f"{element['txt']} to UAH: {element['rate']} \n"
+        file.write(currency_rate)
         return currency_rate
 
 
