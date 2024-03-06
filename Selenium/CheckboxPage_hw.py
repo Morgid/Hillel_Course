@@ -24,12 +24,6 @@ class CheckboxPage:
 
     def expand_folder_other(self, name) -> None:
         versatile_checkbox_button = self.driver.find_element(By.XPATH, f"//label[contains(@for, 'tree-node-{name}')]//ancestor::span/button")
-        # try:
-        #     expand = versatile_checkbox_button.find_element(By.XPATH, "//*[contains(@class, 'expand-open')]")
-        #     if expand.is_displayed():
-        #         expand.click()
-        # except NoSuchElementException:
-        #     pass
         versatile_checkbox_button.click()
 
     def collapse_folder(self, name) -> None:
@@ -59,16 +53,10 @@ class CheckboxPage:
     def locator_success(self):
         locator_success = self.driver.find_elements(By.XPATH, '//*[@class="text-success"]')
         success_list = []
-
         for element in locator_success:
             text_value = element.text
             success_list.append(text_value)
-
         return success_list
 
-
-
-
-
-        # //*[contains(@class, "expand-open")] - відкрито
-        # //*[@class="rct-icon rct-icon-expand-close"]
+    def scroll_down(self) -> None:
+        self.driver.execute_script("window.scrollBy(0, 500);")

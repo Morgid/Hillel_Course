@@ -5,6 +5,7 @@ from Hillel_Course_AQA_Podlinnov.Selenium.RadioButtonPage import RadioButton
 
 def test_radio(chrome):
     chrome.get("https://demoqa.com/radio-button")
+    chrome.execute_script("window.scrollBy(0, 400);")
     ra_yes = RadioButton(driver=chrome, locator=(By.XPATH, "//label[.='{}']//ancestor::div[contains(@class, 'radio')]"),
                          name="Impressive")
     ra_yes.select()
@@ -12,6 +13,7 @@ def test_radio(chrome):
 
 def test_activate_yes_radio(chrome):
     chrome.get("https://demoqa.com/radio-button")
+    chrome.execute_script("window.scrollBy(0, 400);")
     ra_yes = RadioButton(driver=chrome, locator=(By.XPATH, "//label[.='{}']"), name="Yes")
     ra_yes.select()
     locator_sucsess = chrome.find_element(By.XPATH, '//*[@class="text-success"]')

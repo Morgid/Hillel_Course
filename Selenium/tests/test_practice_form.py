@@ -2,7 +2,7 @@ import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from Hillel_october_23.lesson_27.src.pages.page_practice_form import PagePracticeForm
+from Hillel_Course_AQA_Podlinnov.Selenium.src.pages.page_practice_form import PagePracticeForm
 
 @pytest.mark.usefixtures("firefox")
 class TestPracticeForm:
