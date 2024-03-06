@@ -47,7 +47,6 @@ class CheckboxPage:
 
     def unmark_folder(self, name):
         versatile_checkbox_button = self.driver.find_element(By.XPATH, f"//label[contains(@for, 'tree-node-{name}')]")
-        # input_field = self.driver.find_element(By.XPATH, f"//label[contains(@for, 'tree-node-{name}')]/input")
         versatile_checkbox_button.click()
 
     def locator_success(self):
