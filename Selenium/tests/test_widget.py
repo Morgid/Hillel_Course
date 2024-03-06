@@ -1,4 +1,4 @@
-from Hillel_october_23.lesson_23.widgets.components import ExpandableTreeElement, Button
+from Hillel_Course_AQA_Podlinnov.Selenium.widgets.components import ExpandableTreeElement, Button
 
 
 class TestWidgets:

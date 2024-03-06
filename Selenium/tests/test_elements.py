@@ -24,12 +24,12 @@ class TestElementsPage:
         elements = page.get_elements_page_categories()
         assert elements_all in elements
 
-    # def test_is_button_enabled(self, chrome):
-    #     page = PageDynamicProperties(chrome)
-    #     page.open()
-    #     button: WebElement = page.disable_enable_button()
-    #     button.click()
-    #
+    def test_is_button_enabled(self, chrome):
+        page = PageDynamicProperties(chrome)
+        page.open()
+        button: WebElement = page.disable_enable_button()
+        button.click()
+
     def test_is_button_shown(self, chrome):
         page = PageDynamicProperties(chrome).open()  # короткий запис
         button: WebElement = page.button_invisible_visible()
