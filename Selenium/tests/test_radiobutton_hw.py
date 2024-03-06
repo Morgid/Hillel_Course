@@ -28,19 +28,18 @@ def test_get_radio_buttons_info(chrome):
     for button in radio_buttons:
         button_name = button.find_element(By.XPATH, "./../label").text
         button_enable = button.is_enabled()
-        if button_enable == True:
+        if button_enable:
             button_enable = 'Так'
         else:
             button_enable = 'Ні'
         button_selected = button.is_selected()
-        if button_selected == True:
+        if button_selected:
             button_selected = 'Так'
         else:
             button_selected = 'Ні'
         radio_buttons_info[f'Кнопка {button_name}'] = {'Чи увімкнена кнопка': button_enable,
                                                        "Чи активна (обрана) кнопка": button_selected}
     for button_name, button_info in radio_buttons_info.items():
-        print(f"\r{'-'*10}{button_name}{'-'*10}")
+        print(f"\r{'-' * 10}{button_name}{'-' * 10}")
         print(f"Чи увімкнена кнопка: {button_info['Чи увімкнена кнопка']}")
         print(f"Чи активна (обрана) кнопка: {button_info['Чи активна (обрана) кнопка']} \n")
-
