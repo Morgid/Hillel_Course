@@ -106,14 +106,14 @@ def generate_password():
     for i in param_pass():
         passw_gen.append(i)
     random.shuffle(passw_gen)
-    client_pass = ''
+    gen_pass_result = ''
     for i in passw_gen:
-        client_pass += i
-    if client_pass == '':
+        gen_pass_result += i
+    if gen_pass_result == '':
         print('Пароль не може бути пустим, виберіть з яких символів пароль має бути сгенерований!')
         quit()
     else:
-        return f'Ваш пароль: {client_pass}'
+        return f'Ваш пароль: {gen_pass_result}'
 
 
 print(generate_password())
