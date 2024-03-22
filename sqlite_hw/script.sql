@@ -1,8 +1,6 @@
-CREATE database Console_price;
-CREATE TABLE Console_price(good_id INTEGER PRIMARY KEY, name TEXT, qantity REAL, price REAL);
-INSERT INTO Console_price(name, qantity, price) VALUES ('PS5 PlayStation 5 Slim' , 10, 20999)
-INSERT INTO Console_price(name, qantity, price) VALUES ('Valve Steam Deck 64 GB' , 30, 23499)
-INSERT INTO Console_price(name, qantity, price) VALUES ('Nintendo Switch OLED' , 7, 19999)
-INSERT INTO Console_price(name, qantity, price) VALUES ('Microsoft Xbox Series S 1TB' , 2, 17999.50)
+INSERT INTO Console_price(name, price_UAH, quantity) VALUES ('PS5 PlayStation 5 Slim', 20999, 12);
+INSERT INTO Console_price(name, price_UAH, quantity) VALUES ('Valve Steam Deck 64 GB', 23499, 1 );
+INSERT INTO Console_price(name, price_UAH, quantity) VALUES ('Nintendo Switch OLED', 19999.05, 22);
+INSERT INTO Console_price(name, price_UAH, quantity) VALUES ('Microsoft Xbox Series S 1TB', 17999.50, 0);
 
 
