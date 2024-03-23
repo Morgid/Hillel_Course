@@ -20,7 +20,7 @@ for key, value in values.items():
 
 result = cursor.execute("select * from Console_price;")
 for i in result:
-    print(f'{i}')
+    print(i)
 
 cursor.close()
 connection.close()
